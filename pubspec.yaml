@@ -1,0 +1,100 @@
+name: tictactoe_workspace
+publish_to: none
+environment:
+  sdk: ^3.9.0
+dev_dependencies:
+  melos:
+
+workspace:
+  - apps/flutter_app
+
+melos:
+  command:
+    bootstrap:
+      usePubspecOverrides: true
+
+  scripts:
+    # Code generation
+    gen:
+      run: fvm dart run build_runner build --delete-conflicting-outputs
+      exec:
+        concurrency: 1
+      packageFilters:
+        dependsOn: build_runner
+      description: Run build_runner for code generation
+
+    gen:watch:
+      run: fvm dart run build_runner watch --delete-conflicting-outputs
+      exec:
+        concurrency: 1
+      packageFilters:
+        dependsOn: build_runner
+      description: Watch mode for build_runner
+
+    # Localization
+    l10n:
+      run: fvm flutter gen-l10n
+      exec:
+        concurrency: 1
+      description: Generate localization files
+
+    # Tests
+    test:
+      run: fvm flutter test
+      exec:
+        concurrency: 1
+      description: Run all tests
+
+    test:coverage:
+      run: fvm flutter test --coverage
+      exec:
+        concurrency: 1
+      description: Run tests with coverage
+
+    # Analysis
+    analyze:
+      run: fvm flutter analyze
+      exec:
+        concurrency: 1
+      description: Run static analysis
+
+    # Format
+    format:
+      run: fvm dart format .
+      exec:
+        concurrency: 1
+      description: Format Dart code
+
+    format:check:
+      run: fvm dart format --set-exit-if-changed .
+      exec:
+        concurrency: 1
+      description: Check formatting without changes
+
+    # Clean
+    clean:
+      run: fvm flutter clean
+      exec:
+        concurrency: 1
+      description: Clean build artifacts
+
+    # All-in-one
+    prepare:
+      run: melos bootstrap && melos run gen && melos run l10n
+      description: Full project setup (bootstrap + codegen + l10n)
+
+    # Development
+    dev:
+      run: fvm flutter run
+      exec:
+        concurrency: 1
+      packageFilters:
+        flutter: true
+      description: Run Flutter app in dev mode
+
+    # First launch
+    start:
+      description: Setup and start the application
+      steps:
+        - melos run prepare
+        - cd apps/flutter_app && fvm flutter run

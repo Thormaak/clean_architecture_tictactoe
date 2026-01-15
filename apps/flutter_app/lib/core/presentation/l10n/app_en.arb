@@ -1,0 +1,339 @@
+{
+  "@@locale": "en",
+  "appTitle": "TicTacToe",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "playerX": "Player X",
+  "@playerX": {
+    "description": "Name of player X"
+  },
+  "playerO": "Player O",
+  "@playerO": {
+    "description": "Name of player O"
+  },
+  "yourTurn": "{player}'s turn",
+  "@yourTurn": {
+    "description": "Indicates whose turn it is",
+    "placeholders": {
+      "player": {
+        "type": "String",
+        "example": "Player X"
+      }
+    }
+  },
+  "winner": "{player} wins!",
+  "@winner": {
+    "description": "Announces the winner",
+    "placeholders": {
+      "player": {
+        "type": "String",
+        "example": "Player X"
+      }
+    }
+  },
+  "draw": "It's a draw!",
+  "@draw": {
+    "description": "Announces a draw game"
+  },
+  "newGame": "New Game",
+  "@newGame": {
+    "description": "Button to start a new game"
+  },
+  "restart": "Restart",
+  "@restart": {
+    "description": "Button to restart the current game"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings menu title"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language setting label"
+  },
+  "audioSettings": "Audio",
+  "@audioSettings": {
+    "description": "Audio settings section title"
+  },
+  "audioMusicVolume": "Music volume",
+  "@audioMusicVolume": {
+    "description": "Music volume label"
+  },
+  "audioSfxVolume": "SFX volume",
+  "@audioSfxVolume": {
+    "description": "Sound effects volume label"
+  },
+  "audioMute": "Mute",
+  "@audioMute": {
+    "description": "Mute audio label"
+  },
+  "audioClickSound": "Click sound",
+  "@audioClickSound": {
+    "description": "Toggle click sound effects label"
+  },
+  "difficultyEasy": "Easy",
+  "@difficultyEasy": {
+    "description": "Easy difficulty level"
+  },
+  "difficultyMedium": "Medium",
+  "@difficultyMedium": {
+    "description": "Medium difficulty level"
+  },
+  "difficultyHard": "Hard",
+  "@difficultyHard": {
+    "description": "Hard difficulty level"
+  },
+  "playAgainstAI": "VS AI",
+  "@playAgainstAI": {
+    "description": "Option to play against AI"
+  },
+  "twoPlayers": "Two Players",
+  "@twoPlayers": {
+    "description": "Option for two player mode"
+  },
+  "back": "Back",
+  "@back": {
+    "description": "Back button label"
+  },
+  "chooseDifficulty": "Choose Difficulty",
+  "@chooseDifficulty": {
+    "description": "Title for difficulty selection screen"
+  },
+  "difficultyEasySubtitle": "For beginners",
+  "@difficultyEasySubtitle": {
+    "description": "Subtitle for easy difficulty"
+  },
+  "difficultyMediumSubtitle": "A good challenge",
+  "@difficultyMediumSubtitle": {
+    "description": "Subtitle for medium difficulty"
+  },
+  "difficultyHardSubtitle": "Almost unbeatable",
+  "@difficultyHardSubtitle": {
+    "description": "Subtitle for hard difficulty"
+  },
+  "gameModeLocalSubtitle": "Same device, take turns",
+  "@gameModeLocalSubtitle": {
+    "description": "Subtitle for local multiplayer mode"
+  },
+  "gameModeAISubtitle": "Test your skills against AI",
+  "@gameModeAISubtitle": {
+    "description": "Subtitle for AI mode"
+  },
+  "victory": "Victory!",
+  "@victory": {
+    "description": "Victory message"
+  },
+  "wonInMoves": "Won in {count} moves",
+  "@wonInMoves": {
+    "description": "Message showing number of moves to win",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "5"
+      }
+    }
+  },
+  "rematch": "Rematch",
+  "@rematch": {
+    "description": "Button to play again"
+  },
+  "menu": "Menu",
+  "@menu": {
+    "description": "Button to return to main menu"
+  },
+  "drawMessage": "It's a Draw!",
+  "@drawMessage": {
+    "description": "Draw game message for overlay"
+  },
+  "gameEndedAfterMoves": "Game ended after {count} moves",
+  "@gameEndedAfterMoves": {
+    "description": "Message showing game duration in moves",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "9"
+      }
+    }
+  },
+  "aiThinking": "AI is thinking...",
+  "@aiThinking": {
+    "description": "Message shown when AI is processing"
+  },
+  "undo": "Undo",
+  "@undo": {
+    "description": "Undo button label"
+  },
+  "gameModeLocal": "Local",
+  "@gameModeLocal": {
+    "description": "Local game mode label"
+  },
+  "yourTurnLabel": "Your Turn",
+  "@yourTurnLabel": {
+    "description": "Label indicating it's the player's turn"
+  },
+  "languageEnglish": "English",
+  "@languageEnglish": {
+    "description": "English language option"
+  },
+  "languageFrench": "French",
+  "@languageFrench": {
+    "description": "French language option"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button"
+  },
+  "bestOf": "Best Of",
+  "@bestOf": {
+    "description": "Best of label for match configuration"
+  },
+  "bo1": "BO1",
+  "@bo1": {
+    "description": "Best of 1 label"
+  },
+  "bo3": "BO3",
+  "@bo3": {
+    "description": "Best of 3 label"
+  },
+  "bo5": "BO5",
+  "@bo5": {
+    "description": "Best of 5 label"
+  },
+  "roundOf": "Round {current} of {total}",
+  "@roundOf": {
+    "description": "Current round indicator",
+    "placeholders": {
+      "current": {
+        "type": "int",
+        "example": "2"
+      },
+      "total": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "continueMatch": "Continue",
+  "@continueMatch": {
+    "description": "Button to continue to next round"
+  },
+  "nextRound": "Next round",
+  "@nextRound": {
+    "description": "Button to go to the next round in Best Of match"
+  },
+  "matchWinner": "{name} wins the match!",
+  "@matchWinner": {
+    "description": "Message when a player wins the match",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Player X"
+      }
+    }
+  },
+  "roundWinner": "{name} wins the round!",
+  "@roundWinner": {
+    "description": "Message when a player wins a round",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Player X"
+      }
+    }
+  },
+  "roundDraw": "Round ended in a draw",
+  "@roundDraw": {
+    "description": "Message when a round ends in a draw"
+  },
+  "score": "Score",
+  "@score": {
+    "description": "Score label"
+  },
+  "finalScore": "Final Score",
+  "@finalScore": {
+    "description": "Final score label"
+  },
+  "winsToMatch": "{count} more win to match",
+  "@winsToMatch": {
+    "description": "Wins needed to win the match",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "1"
+      }
+    }
+  },
+  "chooseFormat": "Choose Format",
+  "@chooseFormat": {
+    "description": "Title for Best Of selection page"
+  },
+  "bo1Subtitle": "Single game",
+  "@bo1Subtitle": {
+    "description": "Subtitle for Best of 1"
+  },
+  "bo3Subtitle": "First to 2 wins",
+  "@bo3Subtitle": {
+    "description": "Subtitle for Best of 3"
+  },
+  "bo5Subtitle": "First to 3 wins",
+  "@bo5Subtitle": {
+    "description": "Subtitle for Best of 5"
+  },
+  "matchDraw": "Match Draw!",
+  "@matchDraw": {
+    "description": "Title when a match ends in a draw"
+  },
+  "suddenDeath": "Sudden Death",
+  "@suddenDeath": {
+    "description": "Label for single game (BO1) mode"
+  },
+  "errorInvalidMove": "Invalid move",
+  "@errorInvalidMove": {
+    "description": "Error shown when a move is invalid"
+  },
+  "errorGameOver": "Game is over",
+  "@errorGameOver": {
+    "description": "Error shown when the game is already over"
+  },
+  "errorNoActiveRound": "No active round",
+  "@errorNoActiveRound": {
+    "description": "Error shown when no round is active"
+  },
+  "errorRoundInProgress": "Round is still in progress",
+  "@errorRoundInProgress": {
+    "description": "Error shown when a round is not finished yet"
+  },
+  "errorMatchAlreadyOver": "Match is already over",
+  "@errorMatchAlreadyOver": {
+    "description": "Error shown when the match has already ended"
+  },
+  "errorStartRoundFailed": "Failed to start next round",
+  "@errorStartRoundFailed": {
+    "description": "Error shown when starting the next round fails"
+  },
+  "errorCreateMatchFailed": "Failed to create game",
+  "@errorCreateMatchFailed": {
+    "description": "Error shown when creating a new game fails"
+  },
+  "errorRestartFailed": "Failed to restart game",
+  "@errorRestartFailed": {
+    "description": "Error shown when restarting the game fails"
+  },
+  "errorUnexpected": "An unexpected error occurred",
+  "@errorUnexpected": {
+    "description": "Generic unexpected error message"
+  },
+  "errorPageNotFound": "Page not found",
+  "@errorPageNotFound": {
+    "description": "Message shown for unknown routes"
+  },
+  "errorGoHome": "Go Home",
+  "@errorGoHome": {
+    "description": "Button label to return home from error page"
+  },
+  "versusLabel": "VS",
+  "@versusLabel": {
+    "description": "Short label between player cards"
+  }
+}
