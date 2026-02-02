@@ -1,19 +1,22 @@
-sealed class GetAudioSettingsFailure implements Exception {
-  const GetAudioSettingsFailure();
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part 'audio_settings_failures.freezed.dart';
+
+@freezed
+sealed class GetAudioSettingsFailure
+    with _$GetAudioSettingsFailure
+    implements Exception {
+  const factory GetAudioSettingsFailure.unexpected() =
+      GetAudioSettingsUnexpected;
 }
 
-class GetAudioSettingsUnexpected extends GetAudioSettingsFailure {
-  const GetAudioSettingsUnexpected();
-}
+@freezed
+sealed class SetAudioSettingsFailure
+    with _$SetAudioSettingsFailure
+    implements Exception {
+  const factory SetAudioSettingsFailure.saveFailed() =
+      SetAudioSettingsSaveFailed;
 
-sealed class SetAudioSettingsFailure implements Exception {
-  const SetAudioSettingsFailure();
-}
-
-class SetAudioSettingsSaveFailed extends SetAudioSettingsFailure {
-  const SetAudioSettingsSaveFailed();
-}
-
-class SetAudioSettingsUnexpected extends SetAudioSettingsFailure {
-  const SetAudioSettingsUnexpected();
+  const factory SetAudioSettingsFailure.unexpected() =
+      SetAudioSettingsUnexpected;
 }
