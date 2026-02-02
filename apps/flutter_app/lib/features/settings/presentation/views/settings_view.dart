@@ -66,7 +66,11 @@ class _SettingsContent extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
       child: Center(
         child: ConstrainedBox(
-          constraints: BoxConstraints(maxWidth: isLargeScreen ? 1000 : 600),
+          constraints: BoxConstraints(
+            maxWidth: isLargeScreen
+                ? LayoutTokens.pageContentMaxWidthLarge
+                : LayoutTokens.pageContentMaxWidthMobile,
+          ),
           child:
               isLargeScreen
                   ? Row(

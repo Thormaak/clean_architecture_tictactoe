@@ -37,4 +37,9 @@ class LayoutTokens {
   static const Duration durationMedium = Duration(milliseconds: 400);
   static const Duration durationSlow = Duration(milliseconds: 500);
   static const Duration durationSlower = Duration(milliseconds: 600);
+
+  // Content max widths
+  static const double menuCardsMaxWidth = 520;
+  static const double pageContentMaxWidthLarge = 1000;
+  static const double pageContentMaxWidthMobile = 600;
 }

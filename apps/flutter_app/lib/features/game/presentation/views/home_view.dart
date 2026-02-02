@@ -37,7 +37,9 @@ class HomeView extends StatelessWidget {
               child: Center(
                 child: ConstrainedBox(
                   constraints: BoxConstraints(
-                    maxWidth: isLargeScreen ? 1000 : 600,
+                    maxWidth: isLargeScreen
+                        ? LayoutTokens.pageContentMaxWidthLarge
+                        : LayoutTokens.pageContentMaxWidthMobile,
                   ),
                   child:
                       isLargeScreen
@@ -91,7 +93,9 @@ class _MobileHomeContent extends StatelessWidget {
 
         Center(
           child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 520),
+            constraints: const BoxConstraints(
+              maxWidth: LayoutTokens.menuCardsMaxWidth,
+            ),
             child: _GameModeCards(
               l10n: l10n,
               onLocalGame: onLocalGame,
@@ -141,7 +145,9 @@ class _TabletHomeContent extends StatelessWidget {
             children: [
               Center(
                 child: ConstrainedBox(
-                  constraints: const BoxConstraints(maxWidth: 520),
+                  constraints: const BoxConstraints(
+                    maxWidth: LayoutTokens.menuCardsMaxWidth,
+                  ),
                   child: _GameModeCards(
                     l10n: l10n,
                     onLocalGame: onLocalGame,

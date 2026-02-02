@@ -37,7 +37,9 @@ class DifficultyView extends StatelessWidget {
 
             Center(
               child: ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 520),
+                constraints: const BoxConstraints(
+                  maxWidth: LayoutTokens.menuCardsMaxWidth,
+                ),
                 child: _DifficultyCards(l10n: l10n, onSelect: onSelect),
               ),
             ),
