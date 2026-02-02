@@ -13,10 +13,14 @@ class LayoutTokens {
   static const double largeScreenBreakpoint = 900;
 
   // Spacing
+  static const double spacingXs = 4;
   static const double spacingSm = 8;
   static const double spacingMd = 16;
   static const double spacingLg = 24;
   static const double spacingXl = 32;
+
+  /// Spacing between buttons in overlays (12px)
+  static const double spacingButton = 12;
 
   static const EdgeInsets pagePaddingHorizontal = EdgeInsets.symmetric(
     horizontal: spacingLg,

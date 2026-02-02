@@ -93,7 +93,7 @@ class RoundRecapOverlay extends StatelessWidget {
                 ),
               ).animate().fadeIn(duration: 300.ms).slideY(begin: -0.3, end: 0),
 
-              const SizedBox(height: 24),
+              const SizedBox(height: LayoutTokens.spacingLg),
 
               // Result icon and text
               _RoundResultSection(
@@ -103,7 +103,7 @@ class RoundRecapOverlay extends StatelessWidget {
                 playerO: playerO,
               ),
 
-              const SizedBox(height: 32),
+              const SizedBox(height: LayoutTokens.spacingXl),
 
               // Score display
               _RoundScoreSection(
@@ -114,7 +114,7 @@ class RoundRecapOverlay extends StatelessWidget {
                 playerOScore: playerOScore,
               ),
 
-              const SizedBox(height: 32),
+              const SizedBox(height: LayoutTokens.spacingXl),
 
               // Continue button
               Padding(
@@ -198,7 +198,7 @@ class _RoundResultSection extends StatelessWidget {
               curve: Curves.elasticOut,
             ),
 
-            const SizedBox(height: 16),
+            const SizedBox(height: LayoutTokens.spacingMd),
 
             // Round winner text
             ShaderMask(
@@ -250,7 +250,7 @@ class _RoundResultSection extends StatelessWidget {
               curve: Curves.elasticOut,
             ),
 
-            const SizedBox(height: 16),
+            const SizedBox(height: LayoutTokens.spacingMd),
 
             // Draw text
             ShaderMask(
@@ -310,7 +310,7 @@ class _RoundScoreSection extends StatelessWidget {
           ),
         ).animate().fadeIn(delay: 300.ms, duration: 300.ms),
 
-        const SizedBox(height: 12),
+        const SizedBox(height: LayoutTokens.spacingButton),
 
         // Score cards
         Row(
@@ -389,7 +389,7 @@ class _RoundScoreCard extends StatelessWidget {
               color: color,
             ),
           ),
-          const SizedBox(height: 4),
+          const SizedBox(height: LayoutTokens.spacingXs),
           Text(
             name,
             style: TextStyle(

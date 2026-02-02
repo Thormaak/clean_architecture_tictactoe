@@ -95,7 +95,7 @@ class VictoryOverlay extends StatelessWidget {
                   .animate(onPlay: (c) => c.repeat(reverse: true))
                   .rotate(begin: -0.02, end: 0.02, duration: 1.seconds),
 
-              const SizedBox(height: 24),
+              const SizedBox(height: LayoutTokens.spacingLg),
 
               // Victory text
               ShaderMask(
@@ -119,7 +119,7 @@ class VictoryOverlay extends StatelessWidget {
                   .then()
                   .shimmer(duration: 2.seconds, color: Colors.white30),
 
-              const SizedBox(height: 8),
+              const SizedBox(height: LayoutTokens.spacingSm),
 
               // Winner name
               Text(
@@ -131,7 +131,7 @@ class VictoryOverlay extends StatelessWidget {
                 ),
               ).animate().fadeIn(delay: 400.ms, duration: 300.ms),
 
-              const SizedBox(height: 8),
+              const SizedBox(height: LayoutTokens.spacingSm),
 
               // Move count
               Text(
@@ -142,7 +142,7 @@ class VictoryOverlay extends StatelessWidget {
                 ),
               ).animate().fadeIn(delay: 500.ms, duration: 300.ms),
 
-              const SizedBox(height: 32),
+              const SizedBox(height: LayoutTokens.spacingXl),
 
               // Action buttons
               Padding(
@@ -167,7 +167,7 @@ class VictoryOverlay extends StatelessWidget {
                           ),
                         ],
                         if (onHome != null) ...[
-                          if (onRematch != null) const SizedBox(height: 12),
+                          if (onRematch != null) const SizedBox(height: LayoutTokens.spacingButton),
                           SizedBox(
                             width: 220,
                             child: GamingActionButton.filled(

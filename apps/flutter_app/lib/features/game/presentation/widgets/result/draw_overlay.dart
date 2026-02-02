@@ -81,7 +81,7 @@ class DrawOverlay extends StatelessWidget {
                   .animate(onPlay: (c) => c.repeat(reverse: true))
                   .scaleXY(begin: 1.0, end: 1.05, duration: 1.seconds),
 
-              const SizedBox(height: 24),
+              const SizedBox(height: LayoutTokens.spacingLg),
 
               // Draw text
               ShaderMask(
@@ -109,7 +109,7 @@ class DrawOverlay extends StatelessWidget {
                   .animate(onPlay: (c) => c.repeat(reverse: true))
                   .shimmer(duration: 2.seconds, color: Colors.white30),
 
-              const SizedBox(height: 8),
+              const SizedBox(height: LayoutTokens.spacingSm),
 
               // Move count
               Text(
@@ -120,7 +120,7 @@ class DrawOverlay extends StatelessWidget {
                 ),
               ).animate().fadeIn(delay: 400.ms, duration: 300.ms),
 
-              const SizedBox(height: 32),
+              const SizedBox(height: LayoutTokens.spacingXl),
 
               // Action buttons
               Padding(
@@ -145,7 +145,7 @@ class DrawOverlay extends StatelessWidget {
                           ),
                         ],
                         if (onHome != null) ...[
-                          if (onRematch != null) const SizedBox(height: 12),
+                          if (onRematch != null) const SizedBox(height: LayoutTokens.spacingButton),
                           SizedBox(
                             width: 220,
                             child: GamingActionButton.filled(

@@ -121,7 +121,7 @@ class MatchResultOverlay extends StatelessWidget {
                   .animate(onPlay: (c) => c.repeat(reverse: true))
                   .rotate(begin: -0.02, end: 0.02, duration: 1.seconds),
 
-              const SizedBox(height: 24),
+              const SizedBox(height: LayoutTokens.spacingLg),
 
               // Victory or Draw text
               ShaderMask(
@@ -148,7 +148,7 @@ class MatchResultOverlay extends StatelessWidget {
                   .then()
                   .shimmer(duration: 2.seconds, color: Colors.white30),
 
-              const SizedBox(height: 12),
+              const SizedBox(height: LayoutTokens.spacingButton),
 
               // Winner name with match winner message (only if there's a winner)
               if (winner != null)
@@ -161,7 +161,7 @@ class MatchResultOverlay extends StatelessWidget {
                   ),
                 ).animate().fadeIn(delay: 400.ms, duration: 300.ms),
 
-              const SizedBox(height: 32),
+              const SizedBox(height: LayoutTokens.spacingXl),
 
               // Final score section
               _FinalScoreSection(
@@ -173,7 +173,7 @@ class MatchResultOverlay extends StatelessWidget {
                 matchResult: matchResult,
               ),
 
-              const SizedBox(height: 40),
+              const SizedBox(height: LayoutTokens.spacingXl + LayoutTokens.spacingSm),
 
               // Action buttons
               Padding(
@@ -198,7 +198,7 @@ class MatchResultOverlay extends StatelessWidget {
                           ),
                         ],
                         if (onHome != null) ...[
-                          if (onRematch != null) const SizedBox(height: 12),
+                          if (onRematch != null) const SizedBox(height: LayoutTokens.spacingButton),
                           SizedBox(
                             width: 220,
                             child: GamingActionButton.filled(
@@ -259,7 +259,7 @@ class _FinalScoreSection extends StatelessWidget {
           ),
         ).animate().fadeIn(delay: 500.ms, duration: 300.ms),
 
-        const SizedBox(height: 16),
+        const SizedBox(height: LayoutTokens.spacingMd),
 
         // Score display
         Row(
@@ -334,7 +334,7 @@ class _FinalScoreCard extends StatelessWidget {
             const Icon(Icons.star, color: GamingTheme.goldColor, size: 20)
                 .animate(onPlay: (c) => c.repeat(reverse: true))
                 .scaleXY(begin: 1.0, end: 1.2, duration: 800.ms),
-          if (isWinner) const SizedBox(height: 4),
+          if (isWinner) const SizedBox(height: LayoutTokens.spacingXs),
           Text(
             score.toString(),
             style: TextStyle(
@@ -343,7 +343,7 @@ class _FinalScoreCard extends StatelessWidget {
               color: color,
             ),
           ),
-          const SizedBox(height: 4),
+          const SizedBox(height: LayoutTokens.spacingXs),
           Text(
             name,
             style: TextStyle(

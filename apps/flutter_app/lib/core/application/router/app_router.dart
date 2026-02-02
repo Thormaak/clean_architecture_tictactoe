@@ -4,6 +4,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:tictactoe/features/rules/rules.dart';
 
 import '../../presentation/l10n/app_localizations.dart';
+import '../../presentation/theme/layout_tokens.dart';
 import '../../../features/game/presentation/pages/home_page.dart';
 import '../../../features/game/presentation/pages/difficulty_page.dart';
 import '../../../features/game/presentation/pages/best_of_selection_page.dart';
@@ -91,9 +92,9 @@ GoRouter appRouter(Ref ref) {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Icon(Icons.error_outline, size: 64, color: Colors.red),
-              const SizedBox(height: 16),
+              const SizedBox(height: LayoutTokens.spacingMd),
               Text(l10n.errorPageNotFound),
-              const SizedBox(height: 24),
+              const SizedBox(height: LayoutTokens.spacingLg),
               ElevatedButton(
                 onPressed: () => const HomeRoute().go(context),
                 child: Text(l10n.errorGoHome),
